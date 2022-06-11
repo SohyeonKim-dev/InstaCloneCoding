@@ -7,78 +7,20 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView : View {
     var body: some View {
-        GeometryReader { geometry in
-            VStack{
-                HStack{
-                    Button(action: {}){
-                        Image("camera")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                    }.padding()
-
-                    Text("Clonegram")
-                        .font(.title)
-                        .fontWeight(.semibold)
-                        .fontWeight(.light)
-                        .foregroundColor(.indigo)
-                        .multilineTextAlignment(.leading)
-                        .frame(width: 150, height: 40)
-
-                    Spacer()
-
-                    Button(action: {}){
-                        Image("home")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                    }
-
-                    Button(action: {}){
-                        Image("paper-plane")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                    }.padding()
-
-                }.frame(height: 50)
-                
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        PreviewViewTop()
-                        PreviewViewTop()
-                        PreviewViewTop()
-                        PreviewViewTop()
-                        PreviewViewTop()
-                        PreviewViewTop()
-                    }
-                }.frame(height: 70)
-            }
-        }
+        HomeView()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+#if DEBUG
+struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
+        // previews : PreviewProvider 프로토콜의 필수 구현 사항
+        // previews 타입 프로퍼티에서 뷰 생성
+        
         ContentView()
+        // 얘도 결국 홈 뷰 생성으로 이어지겠지?
     }
 }
-
-struct PreviewViewTop: View {
-    var body: some View {
-        ZStack(alignment: .bottom){
-            HStack{
-                VStack {
-                    Image("night")
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                        .clipShape(Circle())
-                        .shadow(radius: 3)
-                        .overlay(Circle().stroke(Color.pink, lineWidth: 2.2))
-                    
-                    Text("Your Stories")
-                        .font(.caption)
-                }
-            }
-        }
-    }
-}
+#endif
