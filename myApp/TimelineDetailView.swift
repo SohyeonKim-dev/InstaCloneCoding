@@ -58,8 +58,8 @@ struct PreviewDetailView: View {
                 .padding(.leading, 5)
                 
                 VStack(alignment: .leading){
-                    Text("Text upperside").font(.headline).foregroundColor(.blue)
-                    Text("Text downside").foregroundColor(Color(.lightGray)).font(.subheadline)
+                    Text("Colli").font(.headline).foregroundColor(.blue)
+                    Text("나는야 싱싱한 야생의 브로콜리 🥦").foregroundColor(Color(.lightGray)).font(.subheadline)
                 }
                 
                 Spacer()
