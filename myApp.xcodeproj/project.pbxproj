@@ -11,6 +11,10 @@
 		55380FA128547F4800867269 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55380FA028547F4800867269 /* ContentView.swift */; };
 		55380FA328547F4800867269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55380FA228547F4800867269 /* Assets.xcassets */; };
 		55380FA628547F4800867269 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55380FA528547F4800867269 /* Preview Assets.xcassets */; };
+		55380FAD2854902100867269 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55380FAC2854902100867269 /* HomeView.swift */; };
+		55380FAF2854911F00867269 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55380FAE2854911F00867269 /* BottomView.swift */; };
+		55380FB1285491A400867269 /* TimelineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55380FB0285491A400867269 /* TimelineDetailView.swift */; };
+		55380FB32854921D00867269 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55380FB22854921D00867269 /* TimelineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		55380FA028547F4800867269 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		55380FA228547F4800867269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55380FA528547F4800867269 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		55380FAC2854902100867269 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		55380FAE2854911F00867269 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
+		55380FB0285491A400867269 /* TimelineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineDetailView.swift; sourceTree = "<group>"; };
+		55380FB22854921D00867269 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				55380F9E28547F4800867269 /* myAppApp.swift */,
 				55380FA028547F4800867269 /* ContentView.swift */,
+				55380FAC2854902100867269 /* HomeView.swift */,
+				55380FAE2854911F00867269 /* BottomView.swift */,
+				55380FB22854921D00867269 /* TimelineView.swift */,
+				55380FB0285491A400867269 /* TimelineDetailView.swift */,
 				55380FA228547F4800867269 /* Assets.xcassets */,
 				55380FA428547F4800867269 /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55380FAD2854902100867269 /* HomeView.swift in Sources */,
+				55380FB32854921D00867269 /* TimelineView.swift in Sources */,
 				55380FA128547F4800867269 /* ContentView.swift in Sources */,
 				55380F9F28547F4800867269 /* myAppApp.swift in Sources */,
+				55380FB1285491A400867269 /* TimelineDetailView.swift in Sources */,
+				55380FAF2854911F00867269 /* BottomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
