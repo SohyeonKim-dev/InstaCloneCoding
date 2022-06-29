@@ -18,6 +18,7 @@
 		55BE86DB286C39FA006F57A3 /* CustomShadowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BE86DA286C39FA006F57A3 /* CustomShadowModifier.swift */; };
 		55BE86DF286C4525006F57A3 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BE86DE286C4525006F57A3 /* MessageView.swift */; };
 		55BE86E1286C48E4006F57A3 /* TextComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BE86E0286C48E4006F57A3 /* TextComponents.swift */; };
+		55BE86E3286C4A0C006F57A3 /* CustomPaddingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BE86E2286C4A0C006F57A3 /* CustomPaddingModifier.swift */; };
 		55D27A132855AE54005E0F62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D27A122855AE54005E0F62 /* SceneDelegate.swift */; };
 		55D27A152855AEA6005E0F62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D27A142855AEA6005E0F62 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		55BE86DA286C39FA006F57A3 /* CustomShadowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShadowModifier.swift; sourceTree = "<group>"; };
 		55BE86DE286C4525006F57A3 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		55BE86E0286C48E4006F57A3 /* TextComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextComponents.swift; sourceTree = "<group>"; };
+		55BE86E2286C4A0C006F57A3 /* CustomPaddingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPaddingModifier.swift; sourceTree = "<group>"; };
 		55D27A122855AE54005E0F62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		55D27A142855AEA6005E0F62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				55BE86DA286C39FA006F57A3 /* CustomShadowModifier.swift */,
+				55BE86E2286C4A0C006F57A3 /* CustomPaddingModifier.swift */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				55380F9F28547F4800867269 /* myAppApp.swift in Sources */,
 				55380FB1285491A400867269 /* TimelineDetailView.swift in Sources */,
 				55380FAF2854911F00867269 /* BottomView.swift in Sources */,
+				55BE86E3286C4A0C006F57A3 /* CustomPaddingModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
