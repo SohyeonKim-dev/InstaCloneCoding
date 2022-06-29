@@ -14,10 +14,10 @@ struct HomeView: View {
                 HStack{
                     Button(action: {}){
                         Image(systemName : "camera")
-                        .font(.title)
-                        .foregroundColor(.black)
+                            .font(.title)
+                            .foregroundColor(.black)
                     }.padding(.leading)
-
+                    
                     Text("Clonegram")
                         .font(.title)
                         .fontWeight(.semibold)
@@ -25,16 +25,16 @@ struct HomeView: View {
                         .foregroundColor(.indigo)
                         .multilineTextAlignment(.leading)
                         .frame(width: 150, height: 40)
-
+                    
                     Spacer()
-
-
+                    
+                    
                     Button(action: {}){
-                        Image("paper-plane")
-                        .resizable()
-                        .frame(width: 30, height: 30)
+                        Image(systemName: "paperplane")
+                            .font(.title)
+                            .foregroundColor(.black)
                     }.padding(.trailing, 30)
-
+                    
                 }.frame(height: 50)
                 
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -69,8 +69,8 @@ struct PreviewViewTop: View {
             HStack{
                 VStack {
                     Image("night")
-                    .resizable()
-                    .frame(width: 60, height: 60)
+                        .resizable()
+                        .frame(width: 60, height: 60)
                         .clipShape(Circle())
                         .shadow(radius: 3)
                         .overlay(Circle().stroke(Color.pink, lineWidth: 2.2))
