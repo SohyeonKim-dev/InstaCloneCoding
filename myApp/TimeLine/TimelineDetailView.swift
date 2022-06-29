@@ -47,20 +47,23 @@ struct PreviewDetailView: View {
     let preview: Preview
     
     var body: some View {
-        VStack(alignment: .leading){
-            HStack{
+        VStack {
+            HStack {
                 Image("people")
                 .resizable()
                 .frame(width: 60, height: 60)
                 .clipShape(Circle())
                 .shadow(radius: 3)
                 .overlay(Circle().stroke(Color.pink, lineWidth: 1))
-                .padding(.top, 3)
-                .padding(.leading, 5)
                 
                 VStack(alignment: .leading){
-                    Text("Colli").font(.headline).foregroundColor(.blue)
-                    Text("나는야 싱싱한 야생의 브로콜리 🥦").foregroundColor(Color(.lightGray)).font(.subheadline)
+                    Text("Colli")
+                        .font(.headline)
+                        .foregroundColor(.black)
+                    
+                    Text("나는야 싱싱한 야생의 브로콜리")
+                        .foregroundColor(Color(.lightGray))
+                        .font(.subheadline)
                 }
                 
                 Spacer()
@@ -69,47 +72,31 @@ struct PreviewDetailView: View {
                     Image(systemName : "list.bullet.circle")
                         .font(.title)
                         .foregroundColor(.black)
+                        .customPadding()
                 }
-                .padding(.trailing, 5)
             }
+            .customPadding()
+            .padding(.top, 5)
             
             Image(preview.imageUrl)
             .resizable()
-            .frame(width: 415, height: 415)
+            .frame(width: 400, height: 400)
             
+            TimelineBottomContents()
+                        
             HStack{
-                Button(action: {}){
-                    Image(systemName: "heart")
-                        .font(.title)
+                VStack(alignment: .leading){
+                    Text("인스타 갬성 문구 표시 🥦 ")
                         .foregroundColor(.black)
-                }.padding(.leading, 10)
-                
-                Button(action: {}){
-                    Image(systemName: "message")
-                        .font(.title)
-                        .foregroundColor(.black)
-                }.padding(.leading, 5)
-                
-                Button(action: {}){
-                    Image(systemName: "paperplane")
-                        .font(.title)
-                        .foregroundColor(.black)
-                }.padding(.leading, 5)
-                
+                    
+                    Text("See all comments")
+                        .foregroundColor(.gray)
+                        .font(.subheadline)
+                }
                 Spacer()
-                
-                Button(action: {}){
-                    Image(systemName: "bookmark")
-                        .font(.title)
-                        .foregroundColor(.black)
-                }.padding(.trailing, 30)
             }
-            
-            VStack(alignment: .leading){
-                Text("인스타 갬성 문구 ... ").foregroundColor(.blue)
-                Text("See all comments").foregroundColor(Color(.lightGray)).font(.subheadline)
-            }.padding(.leading, 5)
-            
+            .padding(.top, 5)
+            .customPadding()
         }
     }
 }
