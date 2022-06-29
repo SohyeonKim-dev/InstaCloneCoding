@@ -10,51 +10,53 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         
-        VStack{
-            HStack{
-                Button(action: {}){
-                    Image(systemName : "camera")
+        NavigationView{
+            VStack{
+                HStack{
+                    Button(action: {}){
+                        Image(systemName : "camera")
+                            .font(.title)
+                            .foregroundColor(.black)
+                    }.padding(.leading)
+                    
+                    Text("Clonegram")
                         .font(.title)
-                        .foregroundColor(.black)
-                }.padding(.leading)
+                        .fontWeight(.semibold)
+                        .fontWeight(.light)
+                        .foregroundColor(.indigo)
+                        .multilineTextAlignment(.leading)
+                        .frame(width: 150, height: 40)
+                    
+                    Spacer() // Hstack 방향으로 여백
+                    
+                    NavigationLink(destination: MessageView() ) {
+                        Image(systemName: "paperplane")
+                            .font(.title)
+                            .foregroundColor(.black)
+                    }
+                    
+                }.frame(height: 50)
                 
-                Text("Clonegram")
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .fontWeight(.light)
-                    .foregroundColor(.indigo)
-                    .multilineTextAlignment(.leading)
-                    .frame(width: 150, height: 40)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        PreviewViewTop()
+                        PreviewViewTop()
+                        PreviewViewTop()
+                        PreviewViewTop()
+                        PreviewViewTop()
+                        PreviewViewTop()
+                    }
+                }.frame(height: 70)
                 
-                Spacer()
+                TimelineDetailView()
+                    .padding(.top, 20)
                 
-                
-                Button(action: {}){
-                    Image(systemName: "paperplane")
-                        .font(.title)
-                        .foregroundColor(.black)
-                }.padding(.trailing, 30)
-                
-            }.frame(height: 50)
-            
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    PreviewViewTop()
-                    PreviewViewTop()
-                    PreviewViewTop()
-                    PreviewViewTop()
-                    PreviewViewTop()
-                    PreviewViewTop()
-                }
-            }.frame(height: 70)
-            
-            TimelineDetailView().padding(.top, 20)
-            
-            BottomView()
-            // 탭 뷰를 쓰는게 더 좋지 않을까?
+                BottomView()
+                // 탭 뷰를 쓰는게 더 좋지 않을까?
+            }
+            .navigationBarHidden(true)
         }
     }
-    
 }
 
 struct HomeView_Previews: PreviewProvider {
@@ -79,7 +81,6 @@ struct PreviewViewTop: View {
                     Text("Your Stories")
                         .font(.caption)
                 }
-                .customShadow()
             }
         }
     }
