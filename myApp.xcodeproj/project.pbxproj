@@ -15,6 +15,7 @@
 		55380FAF2854911F00867269 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55380FAE2854911F00867269 /* BottomView.swift */; };
 		55380FB1285491A400867269 /* TimelineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55380FB0285491A400867269 /* TimelineDetailView.swift */; };
 		55380FB32854921D00867269 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55380FB22854921D00867269 /* TimelineView.swift */; };
+		55BE86DB286C39FA006F57A3 /* CustomShadowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BE86DA286C39FA006F57A3 /* CustomShadowModifier.swift */; };
 		55D27A132855AE54005E0F62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D27A122855AE54005E0F62 /* SceneDelegate.swift */; };
 		55D27A152855AEA6005E0F62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D27A142855AEA6005E0F62 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		55380FAE2854911F00867269 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		55380FB0285491A400867269 /* TimelineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineDetailView.swift; sourceTree = "<group>"; };
 		55380FB22854921D00867269 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		55BE86DA286C39FA006F57A3 /* CustomShadowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShadowModifier.swift; sourceTree = "<group>"; };
 		55D27A122855AE54005E0F62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		55D27A142855AEA6005E0F62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 				55380FAE2854911F00867269 /* BottomView.swift */,
 				55380FB22854921D00867269 /* TimelineView.swift */,
 				55380FB0285491A400867269 /* TimelineDetailView.swift */,
+				55BE86DC286C3A1A006F57A3 /* UI Components */,
 				55380FA228547F4800867269 /* Assets.xcassets */,
 				55380FA428547F4800867269 /* Preview Content */,
 			);
@@ -83,6 +86,14 @@
 				55380FA528547F4800867269 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		55BE86DC286C3A1A006F57A3 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				55BE86DA286C39FA006F57A3 /* CustomShadowModifier.swift */,
+			);
+			path = "UI Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 				55D27A132855AE54005E0F62 /* SceneDelegate.swift in Sources */,
 				55380FB32854921D00867269 /* TimelineView.swift in Sources */,
 				55380FA128547F4800867269 /* ContentView.swift in Sources */,
+				55BE86DB286C39FA006F57A3 /* CustomShadowModifier.swift in Sources */,
 				55380F9F28547F4800867269 /* myAppApp.swift in Sources */,
 				55380FB1285491A400867269 /* TimelineDetailView.swift in Sources */,
 				55380FAF2854911F00867269 /* BottomView.swift in Sources */,

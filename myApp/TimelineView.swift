@@ -45,6 +45,7 @@ struct TimelineView_Previews: PreviewProvider {
 struct Preview {
     var id: Int
     let imageUrl: String
+    // 정수 아이디와, 문자열 url로 구성된 구조체 프리뷰
 }
 
 struct LineView: View {
@@ -55,6 +56,7 @@ struct LineView: View {
             PreviewView(preview: previewArray[0])
             PreviewView(preview: previewArray[1])
             PreviewView(preview: previewArray[2])
+            // 왜 이렇게 3개로 구성하는가?
         }
     }
 }
@@ -65,6 +67,8 @@ struct PreviewView: View {
     
     var body: some View {
         Image(preview.imageUrl)
+        // imageUrl : string 타입이라 바로 넣기 가능하구나
+        // 이렇게 구조체로 정의한 다음에, 요소 빼오는 것 좋은 것 같다.
         .resizable()
         .frame(width: 136, height: 136)
     }
@@ -75,7 +79,7 @@ struct PreviewButton: View {
     
     var body: some View {
         NavigationLink(destination: Text("TEXTO 1")){
-            Image("logo-social")
+            Image("people")
         }
         .frame(width: 120, height: 120)
         .cornerRadius(10)
