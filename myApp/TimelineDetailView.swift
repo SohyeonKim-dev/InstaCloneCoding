@@ -49,12 +49,13 @@ struct PreviewDetailView: View {
     var body: some View {
         VStack(alignment: .leading){
             HStack{
-                Image("logo-social")
+                Image("people")
                 .resizable()
                 .frame(width: 60, height: 60)
                 .clipShape(Circle())
                 .shadow(radius: 3)
                 .overlay(Circle().stroke(Color.pink, lineWidth: 1))
+                .padding(.top, 3)
                 .padding(.leading, 5)
                 
                 VStack(alignment: .leading){
@@ -81,7 +82,7 @@ struct PreviewDetailView: View {
                     Image("heart")
                     .resizable()
                     .frame(width: 30, height: 30)
-                }.padding(.leading, 5)
+                }.padding(.leading, 10)
                 
                 Button(action: {}){
                     Image("comment")
@@ -101,11 +102,11 @@ struct PreviewDetailView: View {
                     Image("flag")
                     .resizable()
                     .frame(width: 30, height: 30)
-                }.padding(.trailing, 5)
+                }.padding(.trailing, 30)
             }
             
             VStack(alignment: .leading){
-                Text("Liked by X and Y").foregroundColor(.blue)
+                Text("인스타 갬성 문구 ... ").foregroundColor(.blue)
                 Text("See all comments").foregroundColor(Color(.lightGray)).font(.subheadline)
             }.padding(.leading, 5)
             

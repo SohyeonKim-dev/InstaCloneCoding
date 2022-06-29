@@ -28,17 +28,12 @@ struct HomeView: View {
 
                     Spacer()
 
-                    Button(action: {}){
-                        Image("home")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                    }
 
                     Button(action: {}){
                         Image("paper-plane")
                         .resizable()
                         .frame(width: 30, height: 30)
-                    }.padding()
+                    }.padding(.trailing, 30)
 
                 }.frame(height: 50)
                 
@@ -56,6 +51,7 @@ struct HomeView: View {
                 TimelineDetailView().padding(.top, 20)
                 
                 BottomView()
+                // 탭 뷰를 쓰는게 더 좋지 않을까?
             }
         }
     }
@@ -78,6 +74,7 @@ struct PreviewViewTop: View {
                         .clipShape(Circle())
                         .shadow(radius: 3)
                         .overlay(Circle().stroke(Color.pink, lineWidth: 2.2))
+                        .padding(.top, 3)
                     
                     Text("Your Stories")
                         .font(.caption)
