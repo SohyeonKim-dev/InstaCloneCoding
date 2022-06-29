@@ -9,52 +9,52 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        GeometryReader { geometry in
-            VStack{
-                HStack{
-                    Button(action: {}){
-                        Image(systemName : "camera")
-                            .font(.title)
-                            .foregroundColor(.black)
-                    }.padding(.leading)
-                    
-                    Text("Clonegram")
+        
+        VStack{
+            HStack{
+                Button(action: {}){
+                    Image(systemName : "camera")
                         .font(.title)
-                        .fontWeight(.semibold)
-                        .fontWeight(.light)
-                        .foregroundColor(.indigo)
-                        .multilineTextAlignment(.leading)
-                        .frame(width: 150, height: 40)
-                    
-                    Spacer()
-                    
-                    
-                    Button(action: {}){
-                        Image(systemName: "paperplane")
-                            .font(.title)
-                            .foregroundColor(.black)
-                    }.padding(.trailing, 30)
-                    
-                }.frame(height: 50)
+                        .foregroundColor(.black)
+                }.padding(.leading)
                 
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        PreviewViewTop()
-                        PreviewViewTop()
-                        PreviewViewTop()
-                        PreviewViewTop()
-                        PreviewViewTop()
-                        PreviewViewTop()
-                    }
-                }.frame(height: 70)
+                Text("Clonegram")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .fontWeight(.light)
+                    .foregroundColor(.indigo)
+                    .multilineTextAlignment(.leading)
+                    .frame(width: 150, height: 40)
                 
-                TimelineDetailView().padding(.top, 20)
+                Spacer()
                 
-                BottomView()
-                // 탭 뷰를 쓰는게 더 좋지 않을까?
-            }
+                
+                Button(action: {}){
+                    Image(systemName: "paperplane")
+                        .font(.title)
+                        .foregroundColor(.black)
+                }.padding(.trailing, 30)
+                
+            }.frame(height: 50)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    PreviewViewTop()
+                    PreviewViewTop()
+                    PreviewViewTop()
+                    PreviewViewTop()
+                    PreviewViewTop()
+                    PreviewViewTop()
+                }
+            }.frame(height: 70)
+            
+            TimelineDetailView().padding(.top, 20)
+            
+            BottomView()
+            // 탭 뷰를 쓰는게 더 좋지 않을까?
         }
     }
+    
 }
 
 struct HomeView_Previews: PreviewProvider {

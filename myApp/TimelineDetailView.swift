@@ -66,9 +66,9 @@ struct PreviewDetailView: View {
                 Spacer()
                 
                 Button(action: {}){
-                    Image("threeDots")
-                    .resizable()
-                    .frame(width: 20, height: 20)
+                    Image(systemName : "list.bullet.circle")
+                        .font(.title)
+                        .foregroundColor(.black)
                 }
                 .padding(.trailing, 5)
             }
@@ -79,29 +79,29 @@ struct PreviewDetailView: View {
             
             HStack{
                 Button(action: {}){
-                    Image("heart")
-                    .resizable()
-                    .frame(width: 30, height: 30)
+                    Image(systemName: "heart")
+                        .font(.title)
+                        .foregroundColor(.black)
                 }.padding(.leading, 10)
                 
                 Button(action: {}){
-                    Image("comment")
-                    .resizable()
-                    .frame(width: 30, height: 30)
+                    Image(systemName: "message")
+                        .font(.title)
+                        .foregroundColor(.black)
                 }.padding(.leading, 5)
                 
                 Button(action: {}){
-                    Image("paper-plane")
-                    .resizable()
-                    .frame(width: 30, height: 30)
+                    Image(systemName: "paperplane")
+                        .font(.title)
+                        .foregroundColor(.black)
                 }.padding(.leading, 5)
                 
                 Spacer()
                 
                 Button(action: {}){
-                    Image("flag")
-                    .resizable()
-                    .frame(width: 30, height: 30)
+                    Image(systemName: "bookmark")
+                        .font(.title)
+                        .foregroundColor(.black)
                 }.padding(.trailing, 30)
             }
             
