@@ -17,7 +17,7 @@ struct HomeView: View {
                         Image(systemName : "camera")
                             .font(.title)
                             .foregroundColor(.black)
-                    }.padding(.leading)
+                    }.customPadding()
                     
                     Text("Clonegram")
                         .font(.title)
@@ -33,9 +33,11 @@ struct HomeView: View {
                         Image(systemName: "paperplane")
                             .font(.title)
                             .foregroundColor(.black)
+                            .customPadding()
                     }
                     
                 }.frame(height: 50)
+                    .padding(.bottom, 10)
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
@@ -47,6 +49,7 @@ struct HomeView: View {
                         PreviewViewTop()
                     }
                 }.frame(height: 70)
+                    .padding(.leading, 10)
                 
                 TimelineDetailView()
                     .padding(.top, 20)

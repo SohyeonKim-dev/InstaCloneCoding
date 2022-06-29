@@ -10,9 +10,8 @@ import SwiftUI
 struct CustomPaddingModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .shadow(color: .black.opacity(0.04), radius: 6, x: 0, y: 2)
-            .shadow(color: .black.opacity(0.04), radius: 2, x: 0, y: 1)
-            .shadow(color: .black.opacity(0.18), radius: 2, x: 0, y: 1)
+            .padding(.trailing, 10)
+            .padding(.leading, 20)
     }
 }
 
@@ -21,4 +20,8 @@ extension View {
         modifier(CustomPaddingModifier())
     }
 }
+
+// 패딩 정의할 때, vertical. horizontal 나누어서 정의하면 좋을 것 같다.
+// 목적도 같이 정의하면 좋을 것 같다.
+// ex) 아이콘 정렬 or 컨텐츠 정렬을 위해서
 
