@@ -11,41 +11,33 @@ struct BottomView: View {
     var body: some View {
         HStack{
              Button(action: {}){
-                 Image("home")
-                 .resizable()
-                 .frame(width: 30, height: 30)
+                 Image(systemName: "house.circle")
+                     .font(.title)
+                     .foregroundColor(.black)
              }.padding()
              
-             Spacer()
-             
              Button(action: {}){
-                 Image("search")
-                 .resizable()
-                 .frame(width: 30, height: 30)
+                 Image(systemName: "magnifyingglass.circle")
+                     .font(.title)
+                     .foregroundColor(.black)
              }.padding()
              
-             Spacer()
-             
              Button(action: {}){
-                 Image("plus-button")
-                 .resizable()
-                 .frame(width: 30, height: 30)
+                 Image(systemName: "plus.circle")
+                     .font(.title)
+                     .foregroundColor(.black)
              }.padding()
              
-             Spacer()
-             
              Button(action: {}){
-                 Image("heart")
-                 .resizable()
-                 .frame(width: 30, height: 30)
+                 Image(systemName: "heart.circle")
+                     .font(.title)
+                     .foregroundColor(.black)
              }.padding()
              
-             Spacer()
-             
              Button(action: {}){
-                 Image("user")
-                 .resizable()
-                 .frame(width: 30, height: 30)
+                 Image(systemName: "person.circle")
+                     .font(.title)
+                     .foregroundColor(.black)
              }.padding()
         }.frame(height: 35)
     }
