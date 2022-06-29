@@ -13,10 +13,10 @@ struct HomeView: View {
             VStack{
                 HStack{
                     Button(action: {}){
-                        Image("camera")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                    }.padding()
+                        Image(systemName : "camera")
+                        .font(.title)
+                        .foregroundColor(.black)
+                    }.padding(.leading)
 
                     Text("Clonegram")
                         .font(.title)
@@ -79,6 +79,7 @@ struct PreviewViewTop: View {
                     Text("Your Stories")
                         .font(.caption)
                 }
+                .customShadow()
             }
         }
     }
